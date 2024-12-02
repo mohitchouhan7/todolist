@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+<script defer src="main.js"></script></head>
+<body>
+    <header>TO DO List</header>
+    <div id="container">
+    <aside><h1>Project</h1>
+        <button id="addProject">Add Project</button>
+        <ul id="projectList"><ul>
+    </aside>
+    <main></main>
+    </div>
+    <dialog>
+        <form method="dialog">
+            <label for="taskname">Task Name</label>
+            <input type="text" id="taskname" name="taskname" required>
+            <label for="details">Details</label>
+            <input type="text" id="details" name="details" required>
+            <label for="date">Date</label>
+            <input type="date"id="date" required>
+            <label for="priority">Priority</label>
+            <select id="priority">
+                <option value="Low">LOw</option>
+                <option value="Moderate" selected>Moderate</option>
+                <option value="High">High</option>
+            </select>
+            <div id="buttonContainer">
+                <button id="cancel" type="reset">Cancel</button>
+                <button id="submit" type="submit">Create</button>
+            </div>
+
+        </form>
+    </dialog>
+    
+</body>
+</html>
